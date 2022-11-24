@@ -12,7 +12,7 @@ solutions [] _ = []
 solutions _  0 = []
 solutions xs x = [e | ys <- [zs | z <- subsequences xs, zs <- permutations z], e <- int2Expr ys, expr2Int e == [x]] -- expression must equal target
 
--- converts a passed list of integers into a list of all possible expressions (+, *)
+-- converts a passed list of integers into a list of all possible expressions (+, *, -, /)
 int2Expr :: [Int] -> [Expr] 
 int2Expr []  = []
 int2Expr [x] = [Const x]
