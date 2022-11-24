@@ -7,8 +7,8 @@ The essence of the problem is as follows: given a sequence of source numbers and
 ## How it works
 Given a list of numbers ([Int]) amd target number (Int) it will find all possible solutions including all operators (+, ×, ÷, -).
 
-
-Example: If your numbers were 44, 53, 23, 63 and the target was 3379068
+### Example: 
+If your numbers were 44, 53, 23, 63 and the target was 3379068
 
 solutions [44, 53, 23, 63] 3379068 = Op Times (Op Times (Op Times (Const 23) (Const 44)) (Const 63)) (Const 53)
 
